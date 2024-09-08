@@ -1,0 +1,153 @@
+/* importação font */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Aplica a estilização da barra de rolagem em navegadores WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 8px;  /* Largura da barra de rolagem vertical */
+    height: 8px; /* Altura da barra de rolagem horizontal */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f13f;  /* Cor de fundo da área de rastreamento da barra de rolagem */
+    border-radius: 10px;  /* Borda arredondada para um efeito suave */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffffff;  /* Cor do "polegar" (a parte móvel) da barra de rolagem */
+    border-radius: 10px;  /* Borda arredondada para um efeito suave */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d1d1d1;  /* Cor do polegar ao passar o mouse */
+}
+
+
+/* Estilos gerais */
+body {
+    font-family: "Chakra Petch", sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url(img/zb3xi6whbsr41.webp);
+    background-size: 1440px;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    padding: 20px;
+    color: white;
+    overflow: hidden;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+/* Efeitos */
+.blur-effect {
+    backdrop-filter: blur(5px);
+    transition: .6s;
+    border: 1.5px solid rgba(211, 173, 255, 0.336);
+}
+
+.blur-effect:hover {
+    backdrop-filter: blur(10px);
+}
+
+.light-effect:hover{
+    box-shadow: 0 0 20px rgba(247, 157, 255, 0.303);
+}
+
+/* Estilos na area de pesquisa */
+.area_pesquisa {
+    /* esitlos de textos */
+    h1 {
+        color: white;
+        font-size: 3.5rem;
+        text-align: center;
+        margin-bottom: 0px;
+
+        span {
+            color: orangered;
+        }
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+}   
+
+.area_pesquisa {
+    padding: 4%;
+    border-radius: 20px;
+}
+
+/* Estilos na área de pesquisa */
+.pesquisa{
+    input {
+        width: 30rem;
+        border: none;
+        padding: .7rem;
+        padding-left: 15px;
+        border-radius: 1.5rem 0 0 1.5rem;
+        margin-bottom: 1rem;
+        color: #45474B;
+        font-size: 1rem;
+        box-sizing: border-box;
+    }
+
+    button {
+        background-color: orangered;
+        color: white;
+        border-radius: 0 1.5rem 1.5rem 0;
+        border: none;
+        padding: .7rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        transition: .6s;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: rgb(255, 107, 53);
+    }
+
+}
+
+.resultados_pesquisa {
+    width: 60rem;
+    height: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px 0 10px 0;
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: #F5F7F8;
+    color: #45474B;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-size: .7rem;
+}
